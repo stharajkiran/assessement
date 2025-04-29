@@ -1,6 +1,15 @@
-# assessement
+# How to docker run
 
-docker build . -t notebook
+## Build the docker image
 
+```
+docker build . -t NotebookImage
+```
 
-docker run -p 8888:8888 --name container notebook
+## Run the docker container
+
+Once the docker image is built, run this!
+
+```
+docker run -p 8888:8888 --name ContainerName NotebookImage
+```
